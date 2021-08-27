@@ -26,4 +26,5 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - run: npm install https://github.com/mapbox/node-sqlite3/tarball/master
     - run: npm install
