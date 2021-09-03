@@ -15,7 +15,7 @@
 #	docker exec -ti --user root alpine_timeoff /bin/sh
 # --------------------------------------------------------------------
 
-FROM node:14
+FROM node:14-alpine
 WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm install  https://github.com/mapbox/node-sqlite3/tarball/master
